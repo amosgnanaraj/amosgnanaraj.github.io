@@ -101,7 +101,7 @@
 
   <nav class="navbar navbar-expand-lg bg-white fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="amosgnanaraj.github.io">Amos Gnanaraj</a>
+      <a class="navbar-brand" href="https://amosgnanaraj.github.io/">Amos Gnanaraj</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="sr-only">Toggle navigation</span>
