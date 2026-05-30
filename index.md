@@ -2,428 +2,810 @@
 <html lang="en">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="apple-mobile-web-app-title" content="CodePen">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Amos Gnanaraj J — Senior Group Lead & .NET Architect with 10+ years of expertise in enterprise software, workflow automation, RPA, AI-assisted solutions, and process automation platforms.">
+  <meta name="keywords" content="Amos Gnanaraj, .NET Developer, Workflow Automation, RPA, Software Architect, Chennai, ASP.NET, Blazor, AI Automation">
+  <meta property="og:title" content="Amos Gnanaraj J — Senior Group Lead & .NET Architect">
+  <meta property="og:description" content="Portfolio of Amos Gnanaraj J — 10+ years in enterprise .NET development, workflow automation, RPA, and AI-driven solutions.">
+  <meta property="og:type" content="website">
+  <title>Amos Gnanaraj J — Senior Group Lead & .NET Architect</title>
   <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
-  <title>My Portfolio - Amos Gnanaraj</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./src/css/style.css">
-  <link rel="stylesheet" href="./src/css/material-kit.css">
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-
-    .brand h1 {
-      font-weight: 700;
-    }
-
-    h2 {
-      margin-bottom: 4rem;
-    }
-
-    .main.main-raised {
-      margin-top: 4rem;
-      margin-bottom: 4rem;
-      padding-top: 4rem;
-      padding-bottom: 4rem;
-    }
-
-    .experience-section {
-      margin: 4rem auto;
-    }
-
-    .experience-section h3 {
-      font-weight: bold;
-    }
-
-    .page-header {
-      background-image: url("./assets/bg.jpg");
-      transform: translate3d(0px, 0px, 0px);
-    }
-
-    .card {
-      margin-top: 1.5rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .padded-hr {
-      margin-top: 4rem;
-      margin-bottom: 4rem;
-    }
-
-    .hr-sect {
-      display: flex;
-      flex-basis: 100%;
-      align-items: center;
-      color: rgba(0, 0, 0, 0.35);
-      margin: 4rem auto;
-    }
-
-    .hr-sect::before,
-    .hr-sect::after {
-      content: "";
-      flex-grow: 1;
-      background: rgba(0, 0, 0, 0.35);
-      height: 1px;
-      font-size: 0px;
-      line-height: 0px;
-      margin: 0px 8px;
-    }
-
-    #scrollBtn {
-      position: fixed;
-      bottom: 0;
-      right: 0;
-      margin: 3rem;
-      border-radius: 2.5rem;
-    }
-
-    @media (max-width: 830px) {
-      #scrollBtn {
-        margin: 1.5rem;
-      }
-    }
-  </style>
-  <script>
-    window.console = window.console || function (t) { };
-  </script>
-  <script>
-    if (document.location.search.match(/type=embed/gi)) {
-      window.parent.postMessage("resize", "*");
-    }
-  </script>
-  <link rel="stylesheet" href="./src/css/carousel.css">
 </head>
 
-<body translate="no" class="sidebar-collapse">
+<body>
 
-  <nav class="navbar navbar-expand-lg bg-white fixed-top">
+  <!-- ════════════════════════════════════════════════════
+       NAVIGATION
+  ════════════════════════════════════════════════════ -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
     <div class="container">
-      <a class="navbar-brand" href="https://amosgnanaraj.github.io/">Amos Gnanaraj</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="navbar-toggler-icon"></span>
-        <span class="navbar-toggler-icon"></span>
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto mr-0">
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.linkedin.com/in/amosgnanaraj/" target="_blank"
-              rel="noopener,nofollow">LinkedIn</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./assets/Resume - Amos Gnanaraj.pdf" target="_blank"
-              rel="noopener,nofollow">Resume (pdf)</a>
-          </li>
-        </ul>
+      <div class="nav-inner">
+        <a class="nav-brand" href="#hero" aria-label="Home">Amos Gnanaraj J</a>
+
+        <div class="nav-links" id="navLinks" role="menubar">
+          <a href="#about"     role="menuitem">About</a>
+          <a href="#skills"    role="menuitem">Skills</a>
+          <a href="#experience" role="menuitem">Experience</a>
+          <a href="#projects"  role="menuitem">Projects</a>
+          <a href="#expertise" role="menuitem">Expertise</a>
+          <a href="#awards"    role="menuitem">Awards</a>
+          <a href="#contact"   role="menuitem">Contact</a>
+          <a href="./assets/Resume - Amos Gnanaraj.pdf" class="nav-resume" target="_blank" rel="noopener" aria-label="Download Resume PDF">⬇ Resume</a>
+        </div>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </div>
   </nav>
-  <div class="page-header header-filter clear-filter purple-filter">
+
+  <!-- ════════════════════════════════════════════════════
+       HERO
+  ════════════════════════════════════════════════════ -->
+  <section id="hero" aria-label="Hero introduction">
+    <canvas id="particle-canvas" aria-hidden="true"></canvas>
+    <div class="hero-bg-gradient" aria-hidden="true"></div>
+
     <div class="container">
-      <div class="row">
-        <!-- <div class="col-md-4">
-          <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="amosgnanaraj"><a class="LI-simple-link" href='https://in.linkedin.com/in/amosgnanaraj?trk=profile-badge'>Amos Gnanaraj</a></div>
-        </div> -->
-        <div class="col-md-8 ml-auto mr-auto">
-          <div class="brand text-center">
-            <h1>Amos Gnanaraj J</h1>
-            <p class="lead">Full Stack Developer</p>
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>Available for Senior Roles &amp; Consulting</span>
+        </div>
+
+        <h1 class="hero-name">
+          <span class="gradient-text">Amos</span> Gnanaraj J
+        </h1>
+
+        <div class="hero-titles" aria-label="Professional titles">
+          <span class="hero-title-tag">Senior Group Lead</span>
+          <span class="hero-title-tag">.NET Architect</span>
+          <span class="hero-title-tag">Automation Specialist</span>
+        </div>
+
+        <p class="hero-typing-line" aria-live="polite">
+          Specializing in <span id="typing-text"></span><span class="cursor" aria-hidden="true"></span>
+        </p>
+
+        <p class="hero-desc">
+          10+ years crafting enterprise-grade software, workflow engines, and intelligent automation platforms.
+          Passionate about solving complex business problems through <strong>automation, AI, and elegant code</strong>.
+        </p>
+
+        <div class="hero-stats" aria-label="Career highlights">
+          <div class="hero-stat">
+            <div class="hero-stat-number" data-count="10" data-suffix="+">0+</div>
+            <div class="hero-stat-label">Years Experience</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number" data-count="5" data-suffix="">0</div>
+            <div class="hero-stat-label">Companies</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number" data-count="60" data-suffix="+">0+</div>
+            <div class="hero-stat-label">Technologies</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number" data-count="2" data-suffix="">0</div>
+            <div class="hero-stat-label">Awards</div>
           </div>
         </div>
-        
+
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary" id="hero-cta-contact">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            Get In Touch
+          </a>
+          <a href="#projects" class="btn btn-outline" id="hero-cta-projects">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>
+            View Projects
+          </a>
+          <a href="./assets/Resume - Amos Gnanaraj.pdf" class="btn btn-outline" target="_blank" rel="noopener" id="hero-cta-resume">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+            Download Resume
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="main main-raised">
-    <h2 class="text-center">Education</h2>
+
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <div class="scroll-mouse"></div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════
+       ABOUT
+  ════════════════════════════════════════════════════ -->
+  <section id="about" class="section" aria-labelledby="about-title">
     <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="card">
-            <div class="card-header card-header-text card-header-danger">
-              <div class="card-text">
-                <h4 class="card-title">St. Peter's College of Engineering and Technology</h4>
+      <div class="section-divider">
+        <span class="section-label">01 — About Me</span>
+        <div class="section-divider-line"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="reveal-left">
+          <h2 class="section-title" id="about-title">
+            Building Systems That <span class="gradient-text">Think & Act</span>
+          </h2>
+          <p class="about-highlight">
+            I'm a <strong>Senior Group Lead and .NET Architect</strong> based in <strong>Chennai, India</strong>,
+            with over a decade of experience designing and delivering enterprise-grade software solutions.
+          </p>
+          <p class="about-highlight">
+            My core focus lies at the intersection of <strong>workflow automation</strong>, <strong>robotic process automation</strong>,
+            and <strong>AI-assisted solutions</strong> — building systems that don't just run, they intelligently adapt and optimize.
+          </p>
+          <p class="about-highlight">
+            From designing custom workflow engines with <strong>Elsa Workflow</strong> to deploying local LLMs for document intelligence,
+            I bring a full-stack architectural mindset backed by deep hands-on expertise.
+          </p>
+          <div class="about-tags">
+            <span class="tag tag-primary">Chennai, India</span>
+            <span class="tag tag-violet">English</span>
+            <span class="tag tag-violet">Tamil</span>
+            <span class="tag tag-accent">Open to Opportunities</span>
+          </div>
+        </div>
+
+        <div class="reveal-right">
+          <div class="about-info-card glass-card" style="margin-bottom:1rem;">
+            <div class="about-info-label">Current Role</div>
+            <div class="about-info-value" style="font-size:1.05rem; font-weight:700; color:var(--clr-primary)">Senior Group Lead</div>
+            <div class="about-info-value" style="margin-top:0.25rem; color:var(--clr-text-muted);">Access Healthcare Pvt Ltd &bull; April 2022 – Present</div>
+          </div>
+
+          <div class="about-info-card glass-card" style="margin-bottom:1rem;">
+            <div class="about-info-label">Education</div>
+            <div class="about-info-value" style="font-weight:600;">B.E. Computer Science &amp; Engineering</div>
+            <div class="about-info-value" style="color:var(--clr-text-muted); margin-top:0.25rem;">St. Peter's College of Engineering &amp; Technology &bull; 2016</div>
+          </div>
+
+          <div class="about-info-card glass-card">
+            <div class="about-info-label">Major Expertise Areas</div>
+            <div class="about-expertise-list" style="margin-top:0.75rem;">
+              <div class="expertise-item">Enterprise Software</div>
+              <div class="expertise-item">Workflow Automation</div>
+              <div class="expertise-item">RPA &amp; Browser Automation</div>
+              <div class="expertise-item">AI-Assisted Solutions</div>
+              <div class="expertise-item">OCR &amp; Computer Vision</div>
+              <div class="expertise-item">Desktop Automation</div>
+              <div class="expertise-item">Process Automation</div>
+              <div class="expertise-item">.NET Architecture</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════
+       SKILLS
+  ════════════════════════════════════════════════════ -->
+  <section id="skills" class="section" aria-labelledby="skills-title">
+    <div class="container">
+      <div class="section-divider">
+        <span class="section-label">02 — Technical Skills</span>
+        <div class="section-divider-line"></div>
+      </div>
+      <h2 class="section-title reveal" id="skills-title">
+        A Deep Technical <span class="gradient-text">Arsenal</span>
+      </h2>
+      <p class="section-subtitle reveal delay-1">60+ technologies across 10 domains, built through a decade of real-world enterprise delivery.</p>
+
+      <div class="skills-grid">
+
+        <!-- Backend -->
+        <div class="skill-category-card skill-cat-backend reveal delay-1">
+          <span class="skill-cat-icon">⚙️</span>
+          <div class="skill-cat-title">Backend Development</div>
+          <div class="skill-tags">
+            <span class="tag tag-primary">C#</span>
+            <span class="tag">.NET Framework</span>
+            <span class="tag tag-primary">.NET 8</span>
+            <span class="tag tag-primary">.NET 10</span>
+            <span class="tag">ASP.NET Core</span>
+            <span class="tag">ASP.NET MVC</span>
+            <span class="tag">Web API</span>
+            <span class="tag">REST API</span>
+            <span class="tag">Dependency Injection</span>
+            <span class="tag">Middleware</span>
+          </div>
+        </div>
+
+        <!-- Frontend -->
+        <div class="skill-category-card skill-cat-frontend reveal delay-2">
+          <span class="skill-cat-icon">🎨</span>
+          <div class="skill-cat-title">Frontend Development</div>
+          <div class="skill-tags">
+            <span class="tag tag-pink">Blazor</span>
+            <span class="tag tag-pink">MudBlazor</span>
+            <span class="tag">Angular</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">jQuery</span>
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">Responsive UI</span>
+          </div>
+        </div>
+
+        <!-- Workflow Automation -->
+        <div class="skill-category-card skill-cat-workflow reveal delay-3">
+          <span class="skill-cat-icon">🔄</span>
+          <div class="skill-cat-title">Workflow Automation</div>
+          <div class="skill-tags">
+            <span class="tag tag-accent">Elsa Workflow</span>
+            <span class="tag tag-accent">Windows WF</span>
+            <span class="tag">Workflow Design</span>
+            <span class="tag">Orchestration</span>
+            <span class="tag">BPA</span>
+            <span class="tag">Custom Activities</span>
+            <span class="tag">Dynamic Execution</span>
+          </div>
+        </div>
+
+        <!-- RPA -->
+        <div class="skill-category-card skill-cat-rpa reveal delay-4">
+          <span class="skill-cat-icon">🤖</span>
+          <div class="skill-cat-title">RPA &amp; Automation</div>
+          <div class="skill-tags">
+            <span class="tag tag-orange">RPA</span>
+            <span class="tag tag-orange">Selenium WebDriver</span>
+            <span class="tag tag-orange">Playwright</span>
+            <span class="tag">WinAppDriver</span>
+            <span class="tag">Sikuli</span>
+            <span class="tag">Browser Automation</span>
+            <span class="tag">Desktop Automation</span>
+            <span class="tag">Image-Based Automation</span>
+          </div>
+        </div>
+
+        <!-- AI -->
+        <div class="skill-category-card skill-cat-ai reveal delay-1">
+          <span class="skill-cat-icon">🧠</span>
+          <div class="skill-cat-title">Artificial Intelligence</div>
+          <div class="skill-tags">
+            <span class="tag tag-violet">Local LLM</span>
+            <span class="tag tag-violet">LLM Integration</span>
+            <span class="tag tag-violet">AI Agent Dev</span>
+            <span class="tag">Prompt Engineering</span>
+            <span class="tag">Intelligent Automation</span>
+            <span class="tag">AI Workflows</span>
+            <span class="tag">Doc Summarization</span>
+          </div>
+        </div>
+
+        <!-- OCR -->
+        <div class="skill-category-card skill-cat-ocr reveal delay-2">
+          <span class="skill-cat-icon">👁️</span>
+          <div class="skill-cat-title">OCR &amp; Computer Vision</div>
+          <div class="skill-tags">
+            <span class="tag tag-accent">OpenCV</span>
+            <span class="tag tag-accent">Tesseract OCR</span>
+            <span class="tag">Image Processing</span>
+            <span class="tag">Document Processing</span>
+            <span class="tag">Screen Recognition</span>
+          </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="skill-category-card skill-cat-db reveal delay-3">
+          <span class="skill-cat-icon">🗄️</span>
+          <div class="skill-cat-title">Databases</div>
+          <div class="skill-tags">
+            <span class="tag tag-primary">SQL Server 2022</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">Entity Framework</span>
+            <span class="tag">EF Core</span>
+            <span class="tag">T-SQL</span>
+            <span class="tag">Dynamic SQL</span>
+            <span class="tag">Stored Procedures</span>
+          </div>
+        </div>
+
+        <!-- Auth & Security -->
+        <div class="skill-category-card skill-cat-auth reveal delay-4">
+          <span class="skill-cat-icon">🔐</span>
+          <div class="skill-cat-title">Authentication &amp; Security</div>
+          <div class="skill-tags">
+            <span class="tag">JWT Auth</span>
+            <span class="tag">Windows Auth</span>
+            <span class="tag">Claims-Based Auth</span>
+            <span class="tag">Authorization</span>
+            <span class="tag">Encryption</span>
+          </div>
+        </div>
+
+        <!-- Engineering -->
+        <div class="skill-category-card skill-cat-eng reveal delay-1">
+          <span class="skill-cat-icon">🏗️</span>
+          <div class="skill-cat-title">Software Engineering</div>
+          <div class="skill-tags">
+            <span class="tag">OOP</span>
+            <span class="tag">SOLID Principles</span>
+            <span class="tag">Design Patterns</span>
+            <span class="tag tag-primary">TDD</span>
+            <span class="tag">Enterprise Architecture</span>
+            <span class="tag">API Design</span>
+          </div>
+        </div>
+
+        <!-- DevOps -->
+        <div class="skill-category-card skill-cat-devops reveal delay-2">
+          <span class="skill-cat-icon">🚀</span>
+          <div class="skill-cat-title">DevOps &amp; Tools</div>
+          <div class="skill-tags">
+            <span class="tag">Git</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">IIS</span>
+            <span class="tag">Visual Studio</span>
+            <span class="tag">CI/CD Pipelines</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════
+       EXPERIENCE TIMELINE
+  ════════════════════════════════════════════════════ -->
+  <section id="experience" class="section" aria-labelledby="experience-title">
+    <div class="container">
+      <div class="section-divider">
+        <span class="section-label">03 — Experience</span>
+        <div class="section-divider-line"></div>
+      </div>
+      <h2 class="section-title reveal" id="experience-title">
+        A Decade of <span class="gradient-text">Enterprise Impact</span>
+      </h2>
+      <p class="section-subtitle reveal delay-1">Five roles across the healthcare and enterprise software landscape, growing from engineer to architect.</p>
+
+      <div class="timeline" role="list">
+
+        <!-- Access Healthcare — Senior Group Lead -->
+        <div class="timeline-item reveal-left" role="listitem">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-card">
+            <div class="timeline-period">April 2022 – Present</div>
+            <div class="timeline-role">Senior Group Lead</div>
+            <div class="timeline-company">Access Healthcare Pvt Ltd · Chennai, India</div>
+            <ul class="timeline-bullets" aria-label="Responsibilities">
+              <li>Leading enterprise automation platform development</li>
+              <li>Designing workflow-based business applications</li>
+              <li>Developing browser &amp; desktop automation solutions</li>
+              <li>Integrating OCR and AI into intelligent automation</li>
+              <li>Driving technical architecture decisions</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag tag-primary">.NET</span>
+              <span class="tag tag-accent">Elsa Workflow</span>
+              <span class="tag tag-orange">RPA</span>
+              <span class="tag tag-violet">AI</span>
+              <span class="tag">OCR</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gold Coast IT Solutions -->
+        <div class="timeline-item reveal-right" role="listitem">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-card">
+            <div class="timeline-period">November 2021 – April 2022</div>
+            <div class="timeline-role">Lead Software Engineer</div>
+            <div class="timeline-company">Gold Coast IT Solutions</div>
+            <ul class="timeline-bullets" aria-label="Responsibilities">
+              <li>Developed healthcare domain enterprise applications</li>
+              <li>Architected and deployed Microsoft-stack solutions</li>
+              <li>Led technical design and delivery activities</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag tag-primary">ASP.NET Core</span>
+              <span class="tag">SQL Server</span>
+              <span class="tag">Healthcare</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Eurofins -->
+        <div class="timeline-item reveal-left" role="listitem">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-card">
+            <div class="timeline-period">August 2021 – November 2021</div>
+            <div class="timeline-role">Senior Software Engineer</div>
+            <div class="timeline-company">Eurofins IT Solutions India Pvt Ltd</div>
+            <ul class="timeline-bullets" aria-label="Responsibilities">
+              <li>Developed enterprise applications for internal stakeholders</li>
+              <li>Enhanced and maintained existing software systems</li>
+              <li>Handled application deployment and support</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">.NET</span>
+              <span class="tag">Enterprise Software</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Access Healthcare — Senior Developer -->
+        <div class="timeline-item reveal-right" role="listitem">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-card">
+            <div class="timeline-period">June 2019 – August 2021</div>
+            <div class="timeline-role">Senior Developer</div>
+            <div class="timeline-company">Access Healthcare Pvt Ltd · Chennai, India</div>
+            <ul class="timeline-bullets" aria-label="Responsibilities">
+              <li>Built process automation platforms from ground up</li>
+              <li>Developed image-based automation solutions</li>
+              <li>Created productivity tools &amp; utilities org-wide</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag tag-orange">Browser Automation</span>
+              <span class="tag">Image Recognition</span>
+              <span class="tag tag-primary">C#</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Saggezza -->
+        <div class="timeline-item reveal-left" role="listitem">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-card">
+            <div class="timeline-period">May 2016 – May 2019</div>
+            <div class="timeline-role">Associate Software Engineer</div>
+            <div class="timeline-company">Saggezza India Pvt Ltd</div>
+            <ul class="timeline-bullets" aria-label="Responsibilities">
+              <li>Built web applications using ASP.NET MVC</li>
+              <li>Applied SOLID principles and TDD practices</li>
+              <li>Worked with JavaScript, HTML, CSS, and SQL</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">ASP.NET MVC</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">TDD</span>
+              <span class="tag">SQL</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════
+       PROJECTS
+  ════════════════════════════════════════════════════ -->
+  <section id="projects" class="section" aria-labelledby="projects-title">
+    <div class="container">
+      <div class="section-divider">
+        <span class="section-label">04 — Projects Showcase</span>
+        <div class="section-divider-line"></div>
+      </div>
+      <h2 class="section-title reveal" id="projects-title">
+        Flagship <span class="gradient-text">Work</span>
+      </h2>
+      <p class="section-subtitle reveal delay-1">Enterprise automation platforms built to scale, adapt, and deliver measurable business impact.</p>
+
+      <div class="projects-grid">
+
+        <!-- Process Automation Platform -->
+        <div class="project-card reveal delay-1" id="project-automation">
+          <span class="project-icon">🏭</span>
+          <div class="project-title">Process Automation Platform</div>
+          <p class="project-desc">
+            A comprehensive enterprise automation platform enabling end-to-end business process automation with web recording, multi-modal interaction capabilities, and real-time workflow execution.
+          </p>
+          <div class="project-features">
+            <div class="project-feature">Web Recording &amp; Browser Automation</div>
+            <div class="project-feature">Desktop Automation via WinAppDriver &amp; Sikuli</div>
+            <div class="project-feature">Image Recognition &amp; Screen Automation</div>
+            <div class="project-feature">Workflow Execution Engine</div>
+            <div class="project-feature">Productivity Enhancement Tools</div>
+          </div>
+          <div class="project-tech">
+            <span class="tag tag-primary">C# / .NET</span>
+            <span class="tag tag-orange">Selenium</span>
+            <span class="tag tag-orange">Playwright</span>
+            <span class="tag tag-orange">WinAppDriver</span>
+            <span class="tag tag-accent">OpenCV</span>
+            <span class="tag">Sikuli</span>
+          </div>
+        </div>
+
+        <!-- Workflow Solutions -->
+        <div class="project-card reveal delay-2" id="project-workflow">
+          <span class="project-icon">⚡</span>
+          <div class="project-title">Intelligent Workflow Platform</div>
+          <p class="project-desc">
+            Custom workflow orchestration system built on Elsa Workflow and Windows Workflow Foundation, enabling dynamic business process automation with visual workflow design and runtime execution.
+          </p>
+          <div class="project-features">
+            <div class="project-feature">Elsa Workflow Integration</div>
+            <div class="project-feature">Windows Workflow Foundation</div>
+            <div class="project-feature">Custom Activity Development</div>
+            <div class="project-feature">Dynamic Workflow Execution</div>
+            <div class="project-feature">Visual Business Process Design</div>
+          </div>
+          <div class="project-tech">
+            <span class="tag tag-accent">Elsa Workflow</span>
+            <span class="tag tag-accent">WWF</span>
+            <span class="tag tag-primary">ASP.NET Core</span>
+            <span class="tag tag-pink">Blazor</span>
+            <span class="tag">SQL Server</span>
+          </div>
+        </div>
+
+        <!-- Intelligent Automation -->
+        <div class="project-card reveal delay-3" id="project-ai">
+          <span class="project-icon">🧠</span>
+          <div class="project-title">AI-Driven Automation Suite</div>
+          <p class="project-desc">
+            Next-generation automation suite integrating local LLMs, computer vision, and OCR to create intelligent document processing pipelines and AI-assisted workflow decision systems.
+          </p>
+          <div class="project-features">
+            <div class="project-feature">Local LLM Deployment &amp; Integration</div>
+            <div class="project-feature">Tesseract OCR Document Processing</div>
+            <div class="project-feature">OpenCV Computer Vision Pipeline</div>
+            <div class="project-feature">AI Agent Orchestration</div>
+            <div class="project-feature">Intelligent Document Summarization</div>
+          </div>
+          <div class="project-tech">
+            <span class="tag tag-violet">Local LLM</span>
+            <span class="tag tag-accent">Tesseract OCR</span>
+            <span class="tag tag-accent">OpenCV</span>
+            <span class="tag tag-violet">AI Agents</span>
+            <span class="tag tag-primary">.NET 8</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════
+       EXPERTISE AREAS
+  ════════════════════════════════════════════════════ -->
+  <section id="expertise" class="section" aria-labelledby="expertise-title">
+    <div class="container">
+      <div class="section-divider">
+        <span class="section-label">05 — Automation Expertise</span>
+        <div class="section-divider-line"></div>
+      </div>
+      <h2 class="section-title reveal" id="expertise-title">
+        10 Domains of <span class="gradient-text-accent">Mastery</span>
+      </h2>
+      <p class="section-subtitle reveal delay-1">Spanning the full spectrum of modern enterprise automation and software architecture.</p>
+
+      <div class="expertise-grid">
+        <div class="expertise-card reveal delay-1" id="exp-enterprise">
+          <span class="expertise-icon">🏢</span>
+          <div class="expertise-name">Enterprise Software Development</div>
+        </div>
+        <div class="expertise-card reveal delay-2" id="exp-workflow">
+          <span class="expertise-icon">🔄</span>
+          <div class="expertise-name">Workflow Automation</div>
+        </div>
+        <div class="expertise-card reveal delay-3" id="exp-bpa">
+          <span class="expertise-icon">⚙️</span>
+          <div class="expertise-name">Business Process Automation</div>
+        </div>
+        <div class="expertise-card reveal delay-4" id="exp-rpa">
+          <span class="expertise-icon">🤖</span>
+          <div class="expertise-name">Robotic Process Automation</div>
+        </div>
+        <div class="expertise-card reveal delay-1" id="exp-browser">
+          <span class="expertise-icon">🌐</span>
+          <div class="expertise-name">Browser Automation</div>
+        </div>
+        <div class="expertise-card reveal delay-2" id="exp-desktop">
+          <span class="expertise-icon">🖥️</span>
+          <div class="expertise-name">Desktop Automation</div>
+        </div>
+        <div class="expertise-card reveal delay-3" id="exp-ai">
+          <span class="expertise-icon">🧠</span>
+          <div class="expertise-name">AI-Assisted Automation</div>
+        </div>
+        <div class="expertise-card reveal delay-4" id="exp-ocr">
+          <span class="expertise-icon">👁️</span>
+          <div class="expertise-name">OCR &amp; Document Processing</div>
+        </div>
+        <div class="expertise-card reveal delay-1" id="exp-arch">
+          <span class="expertise-icon">🏗️</span>
+          <div class="expertise-name">Enterprise Architecture</div>
+        </div>
+        <div class="expertise-card reveal delay-2" id="exp-prod">
+          <span class="expertise-icon">🛠️</span>
+          <div class="expertise-name">Productivity Tools Development</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════
+       AWARDS
+  ════════════════════════════════════════════════════ -->
+  <section id="awards" class="section" aria-labelledby="awards-title">
+    <div class="container">
+      <div class="section-divider">
+        <span class="section-label">06 — Awards &amp; Recognition</span>
+        <div class="section-divider-line"></div>
+      </div>
+      <h2 class="section-title reveal" id="awards-title">
+        Recognized for <span class="gradient-text">Excellence</span>
+      </h2>
+      <p class="section-subtitle reveal delay-1">Honored for outstanding contributions to technology and team performance.</p>
+
+      <div class="awards-grid">
+        <div class="award-card glass-card reveal delay-1" id="award-gem">
+          <div class="award-icon">💎</div>
+          <div>
+            <div class="award-year">2025</div>
+            <div class="award-title">Gem of the Year</div>
+            <div class="award-org">Access Healthcare Pvt Ltd — Recognizing exceptional contribution and leadership in enterprise automation.</div>
+          </div>
+        </div>
+
+        <div class="award-card glass-card reveal delay-2" id="award-star">
+          <div class="award-icon">⭐</div>
+          <div>
+            <div class="award-year">2019</div>
+            <div class="award-title">Shining Star Award Nominee</div>
+            <div class="award-org">Access Healthcare — Groove 2019 · Nominated for outstanding performance and impact on productivity tools.</div>
+          </div>
+        </div>
+
+        <div class="award-card glass-card reveal delay-3" id="award-cert">
+          <div class="award-icon">📜</div>
+          <div>
+            <div class="award-year">Certification</div>
+            <div class="award-title">.NET Technologies</div>
+            <div class="award-org">NIIT — Certification on .NET Technologies and Application Development.</div>
+          </div>
+        </div>
+
+        <div class="award-card glass-card reveal delay-4" id="award-azure">
+          <div class="award-icon">☁️</div>
+          <div>
+            <div class="award-year">Certification</div>
+            <div class="award-title">Microsoft Azure</div>
+            <div class="award-org">NIIT — Developing and Deploying Applications on Microsoft Azure.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════
+       CONTACT
+  ════════════════════════════════════════════════════ -->
+  <section id="contact" class="section" aria-labelledby="contact-title">
+    <div class="container" style="position:relative; z-index:1;">
+      <div class="section-divider">
+        <span class="section-label">07 — Contact</span>
+        <div class="section-divider-line"></div>
+      </div>
+      <h2 class="section-title reveal" id="contact-title">
+        Let's Build Something <span class="gradient-text">Great Together</span>
+      </h2>
+      <p class="section-subtitle reveal delay-1">Open to senior roles, consulting, and technical leadership opportunities.</p>
+
+      <div class="contact-grid">
+
+        <!-- Contact Info -->
+        <div class="contact-info-cards reveal-left">
+
+          <a class="contact-info-card" href="mailto:amosgnanaraj@gmail.com" id="contact-email" rel="noopener">
+            <div class="contact-info-icon">✉️</div>
+            <div>
+              <div class="contact-info-label">Email</div>
+              <div class="contact-info-value"><span style="color:var(--clr-primary)">amosgnanaraj@gmail.com</span></div>
+            </div>
+          </a>
+
+          <a class="contact-info-card" href="tel:+919941138411" id="contact-phone" rel="noopener">
+            <div class="contact-info-icon">📱</div>
+            <div>
+              <div class="contact-info-label">Phone</div>
+              <div class="contact-info-value"><span style="color:var(--clr-primary)">+91 994 113 8411</span></div>
+            </div>
+          </a>
+
+          <a class="contact-info-card" href="https://www.linkedin.com/in/amosgnanaraj/" target="_blank" rel="noopener,nofollow" id="contact-linkedin">
+            <div class="contact-info-icon">💼</div>
+            <div>
+              <div class="contact-info-label">LinkedIn</div>
+              <div class="contact-info-value"><span style="color:var(--clr-primary)">linkedin.com/in/amosgnanaraj</span></div>
+            </div>
+          </a>
+
+          <div class="contact-info-card" id="contact-location">
+            <div class="contact-info-icon">📍</div>
+            <div>
+              <div class="contact-info-label">Location</div>
+              <div class="contact-info-value">Chennai, Tamil Nadu, India</div>
+            </div>
+          </div>
+
+          <a class="contact-info-card" href="./assets/Resume - Amos Gnanaraj.pdf" target="_blank" rel="noopener" id="contact-resume">
+            <div class="contact-info-icon" style="background:var(--clr-accent-dim); border-color:rgba(6,255,165,0.3);">⬇️</div>
+            <div>
+              <div class="contact-info-label">Resume</div>
+              <div class="contact-info-value" style="color:var(--clr-accent);">Download PDF</div>
+            </div>
+          </a>
+
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form reveal-right">
+          <div class="form-title">Send a Message</div>
+          <form id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="input_name">Name</label>
+                <input type="text" id="input_name" name="entry.1305230502" placeholder="Your name" required autocomplete="name">
+              </div>
+              <div class="form-group">
+                <label for="input_email">Email</label>
+                <input type="email" id="input_email" name="entry.522294879" placeholder="you@example.com" required autocomplete="email">
               </div>
             </div>
-            <div class="card-body">
-              B.E in Computer Science and Engineering
-              <div class="d-flex justify-content-between"><span>GPA: 6.65</span><span class="text-primary">Aug 2012 -
-                  May 2016</span></div>
+            <div class="form-group">
+              <label for="input_subject">Subject</label>
+              <input type="text" id="input_subject" name="entry.395694419" placeholder="What's this about?" required>
             </div>
-          </div>
+            <div class="form-group">
+              <label for="input_message">Message</label>
+              <textarea id="input_message" name="entry.1592431" placeholder="Hello Amos, I'd like to discuss…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" id="form-submit" style="width:100%; justify-content:center;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+              Send Message
+            </button>
+            <div id="form-success" class="form-success" role="alert" aria-live="assertive">
+              ✅ Message sent! I'll get back to you soon.
+            </div>
+          </form>
         </div>
-        <div class="col-md-6">
-          <div class="card">
-            <div class="card-header card-header-text card-header-info">
-              <div class="card-text">
-                <h4 class="card-title">St. Joseph's Matric Hr Sec School</h4>
-              </div>
-            </div>
-            <div class="card-body">
-              Higher Secondary
-              <div class="d-flex justify-content-between"><span>Percentage: 80</span><span class="text-primary">Aug 2010
-                  -
-                  May 2012</span></div>
-            </div>
-          </div>
-        </div>
+
       </div>
     </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════════════ -->
+  <footer role="contentinfo">
     <div class="container">
-      <hr class="padded-hr">
-      <h2 class="text-center">Experience</h2>
-      <div class="experience-section">
-        <h3>Senior Developer</h3>
-        <div class="d-flex justify-content-between">
-          <p>Access Healthcare Services Pvt Ltd</p>
-          <p class="text-primary">June 2019 - Present</p>
+      <div class="footer-inner">
+        <div class="footer-text">
+          © 2026 <strong style="color:var(--clr-text)">Amos Gnanaraj J</strong> — Senior Group Lead &amp; .NET Architect · Chennai, India
         </div>
-        <p>
-        <ul>
-          <li>
-            Building highly customized solutions for organization using Microsoft Technologies
-          </li>
-          <li>
-            Building productivity tools which boosts company's revenue
-          </li>
-        </ul>
-        </p>
-      </div>
-      <div class="experience-section">
-        <h3>Associate Software Engineer</h3>
-        <div class="d-flex justify-content-between">
-          <p>Saggezza India Pvt Ltd</p>
-          <p class="text-primary">May 2016 - May 2019</p>
-        </div>
-        <p>
-        <ul>
-          <li>
-            Hands on in application development using with C# in MVC as the
-            code-behind language and EDMX as the Database data consumer
-          </li>
-          <li>
-            Experience in development of applications using .NET and Web technologies
-            like CSS, JavaScript and HTML
-          </li>
-          <li>
-            Knowledge in ASP.NET MVC – 5 with ORM
-          </li>
-          <li>
-            Knowledge on Solid Principles and Object Oriented Programming
-          </li>
-          <li>
-            Working experience in Test Driven Development(TDD)
-          </li>
-        </ul>
-        </p>
-      </div>
-    </div>
-    <div class="container">
-      <hr class="padded-hr">
-      <h2 class="text-center">Skills</h2>
-      <div class="row">
-        <div class="col-md text-center">
-          <h5 class="font-weight-bold">Technology</h5>
-          <p>Microsoft SQL Server</p>
-          <p>ASP.NET Web API</p>
-          <p>JavaScript/JQuery</p>
-          <p>Entity Framework</p>
-          <p>ASP.NET MVC</p>
-          <p>HTML</p>
-          <p>CSS</p>
-        </div>
-        <div class="col-md text-center">
-          <h5 class="font-weight-bold">Other</h5>
-          <p>Teamwork</p>
-          <p>Flexible</p>
-          <p>Adaptable</p>
-          <p>Communication</p>
-          <p>Cross-Functional Teams</p>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/amosgnanaraj/" target="_blank" rel="noopener,nofollow" aria-label="LinkedIn profile">LinkedIn</a>
+          <a href="mailto:amosgnanaraj@gmail.com" aria-label="Send email">Email</a>
+          <a href="./assets/Resume - Amos Gnanaraj.pdf" target="_blank" rel="noopener" aria-label="Download Resume">Resume</a>
         </div>
       </div>
     </div>
-    <div class="container">
-      <hr class="padded-hr">
-      <h2 class="text-center">Awards &amp; Certifications</h2>
-      <div class="row">
-        <div class="col-md text-center">
-          <h5 class="font-weight-bold">Certifications</h5>
-          <p>Certification on Dot Net Technologies by NIIT</p>
-          <p>Developing and Deploying Applications on Microsoft Azure by NIIT</p>
-        </div>
-        <div class="col-md text-center">
-          <h5 class="font-weight-bold">Awards</h5>
-          <p>Nominated as Shining Star at Groove 2019</p>
-        </div>
-      </div>
-    </div>
-    <!-- <div class="container carousel">
-      <div class="carousel">
-        <button class="carousel__btn carousel__btn--l isHidden">
-          &laquo;
-        </button>
-    
-        <div class="carousel__track-container">
-          <ul class="carousel__track">
-            <li class="carousel__slide current-slide"><img class="carousel__img" src="./assets/images/udemy_csharp.jpg"
-                alt=""></li>
-            <li class="carousel__slide"><img class="carousel__img" src="assets/images/udemy_js_basics.jpg" alt=""></li>
-            <li class="carousel__slide"><img class="carousel__img" src="assets/images/udemy_mern_stack.jpg" alt=""></li>
-            <li class="carousel__slide"><img class="carousel__img" src="assets/images/pluralsight_advancedcsharp.JPG"
-                alt=""></li>
-          </ul>
-        </div>
-    
-        <button class="carousel__btn carousel__btn--r">
-          &raquo;
-        </button>
-    
-        <div class="carousel__nav">
-          <button class="carousel__indicator carousel__active"></button>
-          <button class="carousel__indicator"></button>
-          <button class="carousel__indicator"></button>
-          <button class="carousel__indicator"></button>
-        </div>
-      </div>
-    </div> -->
-    <div class="container">
-      <hr class="padded-hr">
-      <h2 class="text-center">Contact Me Directly</h2>
-      <form id="contact-form">
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="input_name">Name</label>
-            <input type="text" class="form-control" name="entry.1305230502" id="input_name" placeholder="Your Name"
-              required="">
-          </div>
-          <div class="form-group col-md-6">
-            <label for="input_email">Email</label>
-            <input type="email" class="form-control" name="entry.522294879" id="input_email"
-              placeholder="you@example.com" required="">
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="input_subject">Subject</label>
-          <input type="text" class="form-control" name="entry.395694419" id="input_subject"
-            placeholder="Your Unique Subject" required="">
-        </div>
-        <div class="form-group">
-          <label for="input_message">Message</label>
-          <textarea type="text" class="form-control" name="entry.1592431" id="input_message"
-            placeholder="Hello, I&#39;m sending this email because..." required=""></textarea>
-        </div>
-        <input type="submit" name="submit" value="Submit" onclick="return SubmitDetails()" class="btn btn-primary">
-      </form>
-      <div class="hr-sect">OR</div>
-      <div>
-        <h3 class="text-center mb-4">Use My Details</h3>
-        <div class="row pt-4">
-          <div class="col-md">
-            <div class="my-2 d-flex flex-row align-items-center justify-content-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <path fill="none" d="M0 0h24v24H0V0z"></path>
-                <path
-                  d="M12 6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2m0 10c2.7 0 5.8 1.29 6 2H6c.23-.72 3.31-2 6-2m0-12C9.79 4 8 5.79 8 8s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 10c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z">
-                </path>
-              </svg>
-              <a class="ml-3">Amos Gnanaraj J</a>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="my-2 d-flex flex-row align-items-center justify-content-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <path fill="none" d="M0 0h24v24H0V0z"></path>
-                <path
-                  d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z">
-                </path>
-              </svg>
-              <a class="ml-3" href="mailto:amosgnanaraj@gmail.com" rel="noopener,nofollow">amosgnanaraj@gmail.com</a>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="my-2 d-flex flex-row align-items-center justify-content-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <path fill="none" d="M0 0h24v24H0V0z"></path>
-                <path
-                  d="M6.54 5c.06.89.21 1.76.45 2.59l-1.2 1.2c-.41-1.2-.67-2.47-.76-3.79h1.51m9.86 12.02c.85.24 1.72.39 2.6.45v1.49c-1.32-.09-2.59-.35-3.8-.75l1.2-1.19M7.5 3H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.49c0-.55-.45-1-1-1-1.24 0-2.45-.2-3.57-.57-.1-.04-.21-.05-.31-.05-.26 0-.51.1-.71.29l-2.2 2.2c-2.83-1.45-5.15-3.76-6.59-6.59l2.2-2.2c.28-.28.36-.67.25-1.02C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1z">
-                </path>
-              </svg>
-              <a class="ml-3" href="tel:+919941138411" rel="noopener,nofollow">(994) 113-8411</a>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="my-2 d-flex flex-row align-items-center justify-content-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <path
-                  d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
-              </svg>
-              <a class="ml-3" href="https://www.linkedin.com/in/amosgnanaraj/">amosgnanaraj</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <a id="scrollBtn" href="https://amosgnanaraj.github.io/#" class="btn btn-primary"
-      aria-label="Scroll to top button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-        viewBox="0 0 24 24">
-        <path fill="none" d="M0 0h24v24H0V0z"></path>
-        <path fill="#fff" d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"></path>
-      </svg>
-    </a>
-  </div>
+  </footer>
 
+  <!-- Scroll to Top -->
+  <button id="scrollTop" aria-label="Scroll to top" title="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"/></svg>
+  </button>
 
-  <script src="./src/js/jquery.min.js"></script>
-  <script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/popper.min.js"></script>
-  <script src="./src/js/bootstrap-material-design.min.js"></script>
-  <script src="./src/js/material-kit.min.js"></script>
-  <script src="./src/js/carousel.js"></script>
-  <!-- <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script> -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
-  <script id="rendered-js">
-    /*
-    This javascript function pulls the data from the contact form and sends it to your contact form php script
-    */
-    function SubmitDetails() {
-      event.preventDefault();
-      var field1 = $("#input_name").val();
-      var field2 = $("#input_email").val();
-      var field3 = $("#input_subject").val();
-      var field4 = $("#input_message").val();
-      document.getElementById("contact-form").reset();
-      try {
-        $.ajax({
-          url: "https://docs.google.com/forms/d/e/1FAIpQLSfip55Z73rskawORE1o5DaU6R2hrCtYz5h34M1Usj3cnji1Ig/formResponse",
-          data: { "entry.1305230502": field1, "entry.522294879": field2, "entry.395694419": field3, "entry.1592431": field4 },
-          type: "POST",
-          dataType: "application/json",
-          success: function (d) {
-            document.getElementById("contact-form").reset();
-          },
-          error: function (x, y, z) {
-            document.getElementById("contact-form").reset();
-            // $('#success-msg').show();
-            // $('#form').hide();
-
-          }
-        });
-      } catch (error) {
-
-      }
-
-      return false;
-    }
-
-    //# sourceURL=pen.js
-    
-  </script>
-
+  <script src="./src/js/portfolio.js"></script>
 
 </body>
-
 </html>
